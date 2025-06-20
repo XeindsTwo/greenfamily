@@ -1,0 +1,76 @@
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.65);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 18px;
+  padding: 24px 24px 16px 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  max-width: 90vw;
+  max-height: 90vh;
+  text-align: center;
+  position: relative;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 60vh;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.modal-caption {
+  color: #222;
+  font-size: 1.1rem;
+  margin-top: 4px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 12px; right: 18px;
+  font-size: 2rem;
+  color: #5cff7c;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.close-modal:hover {
+  color: #ff4b4b;
+}
+
+.open-modal-btn {
+  border: none;
+  border-radius: 20px;
+  color: #000000;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: #C4C4C4;
+}
+
+.open-modal-btn {
+  background: #C4C4C4;
+}
+
+
+
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 12px 4px 8px 4px;
+  }
+  .modal-image {
+    max-height: 40vh;
+  }
+}

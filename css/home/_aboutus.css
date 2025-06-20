@@ -1,0 +1,82 @@
+.about-section h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+.about-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.about-logo {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px;
+}
+
+.about-desc {
+  flex: 1;
+  font-size: 1.15em;
+  margin: 0;
+  color: white;
+}
+
+.about-features {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.about-feature {
+  flex: 1 1 300px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 16px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-feature h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  margin-bottom: 10px; 
+  font-size: 1.15em;
+}
+
+.about-feature p {
+  margin-bottom: 12px;
+  font-size: 1em;
+  color: white;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 8px;
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.about-final {
+  margin-top: 24px;
+  font-size: 1.15em;
+  text-align: center;
+  background: rgba(255,255,255,0.10);
+  padding: 16px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.text{
+  color: white;
+  text-align: center ;
+}

@@ -1,0 +1,40 @@
+.reviews_title{
+    color: white;
+    text-align: center;
+}
+
+.reviews__card {
+    max-width: max-content;
+}
+
+.reviews__swiper .swiper-slide {
+    max-width: 450px;
+}
+
+@media (max-width: 1024px) {
+  .reviews_title {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+
+  .reviews__swiper .swiper-slide {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews_title {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    padding: 0 10px;
+  }
+
+  .reviews__swiper .swiper-slide {
+    max-width: 90vw; 
+  }
+
+  .reviews__card {
+    max-width: 90vw;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,15 @@
+@import "basic/_reset.css";
+@import "basic/_fonts.css";
+@import "basic/_global.css";
+
+@import "components/_header.css";
+@import "components/_footer.css";
+
+@import "home/_home.css";
+@import "home/_video.css";
+@import "home/_aboutus.css";
+@import "home/_services.css";
+@import "home/_otz.css";
+@import "home/_banner.css";
+@import "home/_modal.css";
+@import "home/_gallery.css";

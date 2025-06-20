@@ -1,0 +1,53 @@
+.indent {
+  padding: 40px 20px;
+}
+
+.home__video {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.div3 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 24px;
+}
+
+.video1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.about__play {
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.about__play:hover {
+  transform: scale(1.1);
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+  .div3 {
+    font-size: 2rem;
+  }
+  .home__video {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .div3 {
+    font-size: 1.5rem;
+  }
+  .about__play {
+    width: 50px;
+    height: 50px;
+  }
+}
