@@ -1,9 +1,12 @@
+.gallery__swiper {
+  cursor: pointer;
+}
+
 .gallery__navigation {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 60px;
   margin-bottom: 30px;
 }
 
