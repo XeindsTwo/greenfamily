@@ -1,82 +1,90 @@
-.about-section h2 {
-  text-align: center;
-  font-size: 2.2em;
-  margin-bottom: 32px;
-  font-weight: 700;
-}
-
-.about-main {
+.about__top {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   margin-bottom: 32px;
 }
 
-.about-logo {
-  width: 120px;
+.about__logo {
+  width: 230px;
   height: auto;
   border-radius: 8px;
   background: #fff;
   padding: 10px;
 }
 
-.about-desc {
-  flex: 1;
-  font-size: 1.15em;
-  margin: 0;
-  color: white;
+.about__description {
+  max-width: 660px;
+  font-size: 20px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.91);
 }
 
-.about-features {
-  display: flex;
-  gap: 32px;
-  margin-bottom: 24px;
+.about__features {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   flex-wrap: wrap;
 }
 
-.about-feature {
-  flex: 1 1 300px;
-  background: rgba(255, 255, 255, 0.08);
+.about__feature {
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  padding: 16px;
-  min-width: 250px;
+  padding: 22px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.about-feature h3 {
-  color: rgb(255, 255, 255);
+.about__feature-subtitle {
+  color: white;
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 1.15em;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.about-feature p {
-  margin-bottom: 12px;
-  font-size: 1em;
-  color: white;
+.about__feature-text {
+  margin-bottom: 27px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.93);
 }
 
-.about-img {
+.about__img {
+  object-position: top;
+  object-fit: cover;
   width: 100%;
-  max-width: 180px;
   border-radius: 8px;
   margin-top: auto;
   align-self: flex-end;
 }
 
-.about-final {
-  margin-top: 24px;
-  font-size: 1.15em;
+.about__final {
+  font-size: 22px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.10);
-  padding: 16px;
   border-radius: 8px;
   color: #fff;
 }
 
-.text {
+.about__btn {
+  background-color: white;
+  padding: 17px 32px;
+  border-radius: 10px;
+  margin: 20px auto 0;
+  display: block;
+  border: 1px solid transparent;
+  transition: background-color .4s, color .4s, border .4s;
+}
+
+.about__btn:hover {
+  background-color: rgba(255, 255, 255, 0.84);
+}
+
+.about__btn:focus {
+  background-color: transparent;
+  border-color: white;
   color: white;
-  text-align: center;
 }
