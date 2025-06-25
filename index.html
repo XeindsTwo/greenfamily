@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Greenfamily</title>
+  <link rel="icon" href="images/favicon.ico" type="images/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,45 +16,53 @@
 <header class="header">
   <div class="container">
     <div class="header__inner">
-      <img src="images/logo.png" width="100" height="100">
-
+      <div class="header__left">
+        <img src="images/logo.svg" width="212" height="67">
+      </div>
       <nav class="header__nav">
         <ul class="header__list">
           <li>
-            <a class="header__link" href="#">О нас</a>
+            <a class="header__link desktop" href="#about">О нас</a>
           </li>
           <li>
-            <a class="header__link" href="#">Видео</a>
+            <a class="header__link desktop" href="#">Видео</a>
           </li>
           <li>
-            <a class="header__link" href="#">Услуги</a>
+            <a class="header__link desktop" href="#services">Услуги</a>
           </li>
           <li>
-            <a class="header__link" href="#">Отзывы</a>
+            <a class="header__link desktop" href="#reviews">Отзывы</a>
           </li>
           <li>
-            <a class="header__link" href="#">Фото с праздников</a>
+            <a class="header__link desktop" href="#photos">Фото с праздников</a>
           </li>
         </ul>
       </nav>
-
-      <a class="header__phone" href="tel:+79185606660">
-        <img src="images/phone.png" width="15" height="15">
-        +7 (918) 560 66 60
-      </a>
+      <div class="header__right">
+        <a class="header__phone" href="tel:+79185606660">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+            <path
+                d="M6.70646 3.5441L7.13913 4.31939C7.5296 5.01904 7.37285 5.93687 6.75787 6.55185C6.75787 6.55186 6.75787 6.55186 6.75787 6.55186C6.75776 6.55197 6.01201 7.29792 7.36441 8.65031C8.71617 10.0021 9.46208 9.25763 9.46286 9.25685C9.46288 9.25683 9.46287 9.25684 9.4629 9.25682C10.0779 8.64186 10.9957 8.48513 11.6953 8.87559L12.4706 9.30826C13.5271 9.89787 13.6519 11.3795 12.7232 12.3081C12.1652 12.8661 11.4817 13.3003 10.726 13.329C9.45391 13.3772 7.29358 13.0552 5.12653 10.8882C2.95948 8.72114 2.63754 6.56081 2.68576 5.28871C2.71441 4.53306 3.1486 3.84948 3.7066 3.29148C4.63523 2.36284 6.11685 2.48761 6.70646 3.5441Z"
+                stroke="#fff" stroke-width="1.44167" stroke-linecap="round"></path>
+          </svg>
+          +7 (918) 560 66 60
+        </a>
+      </div>
     </div>
   </div>
 </header>
 <main>
-  <section class="indent">
-    <div class="home__video">
-      <h2 class="div3">
-        О нашей игровой комнате
-      </h2>
-      <div class="video1">
-        <img src="images/shapka.png" width="" height="">
-      </div>
-      <a class="about__play" href="/images/video_2025-06-12_20-03-54.mp4">
+  <section class="home indent">
+    <div class="home__info">
+      <h1 class="home__title">
+        Ваша семейная территория радости
+      </h1>
+      <p class="home__text">
+        Залетай в GreenFamily — устроим движ, от которого дети визжат, а взрослые кайфуют.
+        Декор, шоу, атмосфера — всё на стиле.
+      </p>
+      <a class="home__play" data-fancybox="video" href="images/video.mp4">
+        Посмотреть видео
         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
               d="M38.1 26.7L28.1 21C27.5246 20.6905 26.879 20.5345 26.2257 20.5472C25.5724 20.56 24.9334 20.7409 24.3705 21.0727C23.8075 21.4044 23.3396 21.8757 23.012 22.441C22.6843 23.0064 22.508 23.6466 22.5 24.3V35.7C22.4984 36.3678 22.6728 37.0243 23.0057 37.6032C23.3385 38.1822 23.8181 38.6631 24.396 38.9977C24.974 39.3323 25.6299 39.5087 26.2977 39.5091C26.9655 39.5095 27.6217 39.3339 28.2 39L38.2 33.3C38.7706 32.954 39.2408 32.4648 39.5638 31.8808C39.8868 31.2969 40.0515 30.6386 40.0414 29.9714C40.0312 29.3041 39.8467 28.6511 39.5062 28.0772C39.1656 27.5034 38.6808 27.0286 38.1 26.7Z"
@@ -62,10 +73,6 @@
         </svg>
       </a>
     </div>
-    </div>
-  </section>
-  <section>
-
   </section>
   <section class="indent" id="about">
     <div class="container">
@@ -108,6 +115,10 @@
   </section>
   <section class="indent" id="services">
     <h2 class="title">Услуги</h2>
+    <p class="services-text">
+      Не просто услуги — это опыт, который ваши дети и вы не забудете. От шоу до фото,
+      от веселья до слёз счастья — мы делаем праздник, который хочется пересматривать!
+    </p>
     <div class="services-grid">
       <div class="service-card" style="background-image: url('images/services/1.webp')">
         <div class="service-info">
@@ -159,49 +170,49 @@
       <div class="gallery__swiper swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="gallery__card">
-              <img src="images/gallery/1.webp" height="440" loading="lazy">
-            </div>
+            <a href="images/gallery/1.webp" class="gallery__card" data-fancybox="gallery">
+              <img src="images/gallery/1.webp" height="440" loading="lazy" alt="Фото с праздника 1">
+            </a>
           </div>
           <div class="swiper-slide">
-            <div class="gallery__card">
-              <img src="images/gallery/2.webp" height="440" loading="lazy">
-            </div>
+            <a href="images/gallery/2.webp" class="gallery__card" data-fancybox="gallery">
+              <img src="images/gallery/2.webp" height="440" loading="lazy" alt="Фото с праздника 2">
+            </a>
           </div>
           <div class="swiper-slide">
-            <div class="gallery__card">
-              <img src="images/gallery/3.webp" height="440" loading="lazy">
-            </div>
+            <a href="images/gallery/3.webp" class="gallery__card" data-fancybox="gallery">
+              <img src="images/gallery/3.webp" height="440" loading="lazy" alt="Фото с праздника 3">
+            </a>
           </div>
           <div class="swiper-slide">
-            <div class="gallery__card">
-              <img src="images/gallery/4.webp" height="440" loading="lazy">
-            </div>
+            <a href="images/gallery/4.webp" class="gallery__card" data-fancybox="gallery">
+              <img src="images/gallery/4.webp" height="440" loading="lazy" alt="Фото с праздника 4">
+            </a>
           </div>
           <div class="swiper-slide">
-            <div class="gallery__card">
-              <img src="images/gallery/5.webp" height="440" loading="lazy">
-            </div>
+            <a href="images/gallery/5.webp" class="gallery__card" data-fancybox="gallery">
+              <img src="images/gallery/5.webp" height="440" loading="lazy" alt="Фото с праздника 5">
+            </a>
           </div>
           <div class="swiper-slide">
-            <div class="gallery__card">
-              <img src="images/gallery/6.webp" height="440" loading="lazy">
-            </div>
+            <a href="images/gallery/6.webp" class="gallery__card" data-fancybox="gallery">
+              <img src="images/gallery/6.webp" height="440" loading="lazy" alt="Фото с праздника 6">
+            </a>
           </div>
           <div class="swiper-slide">
-            <div class="gallery__card">
-              <img src="images/gallery/7.webp" height="440" loading="lazy">
-            </div>
+            <a href="images/gallery/7.webp" class="gallery__card" data-fancybox="gallery">
+              <img src="images/gallery/7.webp" height="440" loading="lazy" alt="Фото с праздника 7">
+            </a>
           </div>
           <div class="swiper-slide">
-            <div class="gallery__card">
-              <img src="images/gallery/8.webp" height="440" loading="lazy">
-            </div>
+            <a href="images/gallery/8.webp" class="gallery__card" data-fancybox="gallery">
+              <img src="images/gallery/8.webp" height="440" loading="lazy" alt="Фото с праздника 8">
+            </a>
           </div>
           <div class="swiper-slide">
-            <div class="gallery__card">
-              <img src="images/gallery/9.webp" height="440" loading="lazy">
-            </div>
+            <a href="images/gallery/9.webp" class="gallery__card" data-fancybox="gallery">
+              <img src="images/gallery/9.webp" height="440" loading="lazy" alt="Фото с праздника 9">
+            </a>
           </div>
         </div>
       </div>
@@ -245,7 +256,8 @@
                     День рождения, который мы не забудем!
                   </h3>
                   <p class="cases__text">
-                    Организовали праздник для дочери с помощью вашей команды — и это был восторг! Весёлые аниматоры, шоу
+                    Организовали праздник для дочери с помощью вашей команды — и это был восторг! Весёлые аниматоры,
+                    шоу
                     мыльных пузырей и стильный декор превзошли все ожидания. Дети были в полном восторге, а родители —
                     счастливы. Такой семейный праздник хочется повторить!
                   </p>
@@ -258,7 +270,8 @@
                   </div>
                 </div>
                 <div class="cases__image">
-                  <img src="images/cases/photos/1.jpg" loading="lazy" alt="Проведение детских и семейных праздников" width="800"
+                  <img src="images/cases/photos/1.jpg" loading="lazy" alt="Проведение детских и семейных праздников"
+                       width="800"
                        height="460">
                 </div>
               </div>
@@ -301,7 +314,8 @@
                   </div>
                 </div>
                 <div class="cases__image">
-                  <img src="images/cases/photos/2.webp" loading="lazy" alt="Проведение детских и семейных праздников" width="800"
+                  <img src="images/cases/photos/2.webp" loading="lazy" alt="Проведение детских и семейных праздников"
+                       width="800"
                        height="460">
                 </div>
               </div>
@@ -344,7 +358,8 @@
                   </div>
                 </div>
                 <div class="cases__image">
-                  <img src="images/cases/photos/3.webp" loading="lazy" alt="Проведение детских и семейных праздников" width="800"
+                  <img src="images/cases/photos/3.webp" loading="lazy" alt="Проведение детских и семейных праздников"
+                       width="800"
                        height="460">
                 </div>
               </div>
@@ -363,11 +378,11 @@
       <div class="footer-col nav-col">
         <div class="footer-title">ОСНОВНЫЕ СТРАНИЦЫ</div>
         <ul>
-          <li><a class="footer__link" href="#about">О нас</a></li>
-          <li><a class="footer__link" href="#video">Видео</a></li>
-          <li><a class="footer__link" href="#services">Услуги</a></li>
-          <li><a class="footer__link" href="#reviews">Отзывы</a></li>
-          <li><a class="footer__link" href="#photos">Фото с праздников</a></li>
+          <li><a class="footer__link desktop" href="#about">О нас</a></li>
+          <li><a class="footer__link desktop" href="#video">Видео</a></li>
+          <li><a class="footer__link desktop" href="#services">Услуги</a></li>
+          <li><a class="footer__link desktop" href="#reviews">Отзывы</a></li>
+          <li><a class="footer__link desktop" href="#photos">Фото с праздников</a></li>
         </ul>
       </div>
       <div class="footer-col nav-col">
@@ -423,6 +438,7 @@
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>

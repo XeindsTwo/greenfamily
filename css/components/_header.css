@@ -2,41 +2,62 @@
   backdrop-filter: blur(30px);
   background: rgba(217, 217, 217, 0.07);
   position: absolute;
+  top: 0;
   z-index: 50;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__left, .header__right {
+  max-width: 280px;
   width: 100%;
 }
 
 .header__list {
   display: flex;
-  gap: 20px;
-  color: aliceblue;
+  align-items: center;
+  gap: 25px;
 }
 
 .header__link {
   padding: 2px;
   border-radius: 4px;
   border: 1px solid transparent;
+  color: white;
+  font-size: 18px;
   transition: color .4s, border .4s;
 }
 
 .header__link:hover {
-  color: rgb(74, 148, 64);
+  color: rgb(82, 225, 64);
 }
 
 .header__link:focus {
   border-color: rgb(76, 175, 70);
 }
 
-.header__inner {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
 .header__phone {
   color: white;
-  display: inline;
-  gap: 8px;
   margin-left: auto;
-  display: flex
+  display: flex;
+  max-width: max-content;
+  gap: 10px;
+  font-size: 18px;
+  align-items: center;
+  transition: color .4s;
+}
+
+.header__phone:hover {
+  color: #5cff7c;
+}
+
+.header__phone:hover svg path {
+  stroke: #5cff7c;
 }

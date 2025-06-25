@@ -1,5 +1,6 @@
 .gallery__swiper {
   cursor: pointer;
+  border-radius: 12px;
 }
 
 .gallery__navigation {
@@ -27,9 +28,15 @@
   left: -28px;
   border-radius: 50%;
   background-color: #222222;
-  transition: opacity .4s, background-color .4s;
+  border: 2px solid transparent;
+  transition: opacity .4s, border .4s, background-color .4s;
 }
 
 .gallery__btn:hover {
   background-color: #414141;
+}
+
+.gallery__btn:focus {
+  background-color: transparent;
+  border-color: #ececec;
 }
