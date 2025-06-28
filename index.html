@@ -25,7 +25,7 @@
             <a class="header__link desktop" href="#about">О нас</a>
           </li>
           <li>
-            <a class="header__link desktop" href="#">Видео</a>
+            <a class="header__link desktop" href="#benefits">Преимущества</a>
           </li>
           <li>
             <a class="header__link desktop" href="#services">Услуги</a>
@@ -74,6 +74,49 @@
       </a>
     </div>
   </section>
+  <section class="benefits indent" id="benefits">
+    <div class="container">
+      <h2 class="title">Наши преимущества</h2>
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <div class="benefits__icon">
+            <img src="images/icons/1.svg" alt="декор иконка">
+          </div>
+          <h3 class="benefits__name">Профессиональная команда</h3>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__icon">
+            <img src="images/icons/2.svg" alt="декор иконка">
+          </div>
+          <h3 class="benefits__name">Доверие семей</h3>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__icon">
+            <img src="images/icons/3.svg" alt="декор иконка">
+          </div>
+          <h3 class="benefits__name">Яркие события</h3>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__icon">
+            <img src="images/icons/4.svg" alt="декор иконка">
+          </div>
+          <h3 class="benefits__name">Надёжные партнёры</h3>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__icon">
+            <img src="images/icons/5.svg" alt="декор иконка">
+          </div>
+          <h3 class="benefits__name">Интерактивные программы</h3>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__icon">
+            <img src="images/icons/6.svg" alt="декор иконка">
+          </div>
+          <h3 class="benefits__name">Призы и подарки</h3>
+        </li>
+      </ul>
+    </div>
+  </section>
   <section class="indent" id="about">
     <div class="container">
       <h2 class="about__title title">О нас</h2>
@@ -110,7 +153,7 @@
       <p class="about__final">
         Проведите свой праздник в GreenFamily — уютная атмосфера, забота и волшебство для особенного дня
       </p>
-      <button class="about__btn btn" type="button" id="about-modal-btn">Оставить заявку</button>
+      <button class="about__btn btn" type="button" data-btn-modal-order>Оставить заявку</button>
     </div>
   </section>
   <section class="indent" id="services">
@@ -147,15 +190,15 @@
         </div>
       </div>
     </div>
-    <div class="banner">
+    <a class="banner" href="https://t.me/twopahan_n" target="_blank">
       <h3 class="banner__title">
         Только 30-31 июня в GreenFamily
       </h3>
       <p class="banner__text">
         При бронировании детской студии скидка 40%
       </p>
-      <a class="banner__btn" href="https://web.telegram.org" target="_blank">Забронировать</a>
-    </div>
+      <button class="banner__btn" type="button">Забронировать</button>
+    </a>
   </section>
   <section class="indent" id="photos">
     <div class="container indent">
@@ -380,20 +423,20 @@
             </div>
           </div>
         </div>
-        <button class="cases__btn-modal" type="button" data-btn-modal-order>Оставить свой отзыв</button>
+        <button class="cases__btn-modal" type="button" id="cases_btn">Оставить свой отзыв</button>
       </div>
     </div>
   </section>
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-col logo-col">
-        <img src="images/logo.png" alt="Green Family" class="footer-logo-img">
+        <img src="images/logo.svg" width="210" height="68" alt="Green Family" class="footer-logo-img">
       </div>
       <div class="footer-col nav-col">
         <div class="footer-title">ОСНОВНЫЕ СТРАНИЦЫ</div>
         <ul>
           <li><a class="footer__link desktop" href="#about">О нас</a></li>
-          <li><a class="footer__link desktop" href="#video">Видео</a></li>
+          <li><a class="footer__link desktop" href="#benefits">Преимущества</a></li>
           <li><a class="footer__link desktop" href="#services">Услуги</a></li>
           <li><a class="footer__link desktop" href="#reviews">Отзывы</a></li>
           <li><a class="footer__link desktop" href="#photos">Фото с праздников</a></li>
@@ -433,6 +476,22 @@
     </div>
   </footer>
 </main>
+<div class="modal" id="orderModal">
+  <div class="modal__content">
+    <button class="modal__close" id="closeOrderModal">×</button>
+    <h3 class="modal__title">Оставьте заявку</h3>
+    <p class="modal__info">
+      Мы свяжемся с вами в ближайшее время
+    </p>
+    <form class="modal__form" id="orderForm">
+      <label for="orderName">Ваше имя</label>
+      <input id="orderName" type="text" name="name" placeholder="Введите имя" required>
+      <label for="orderPhone">Телефон</label>
+      <input id="orderPhone" type="tel" name="phone" placeholder="Введите номер телефона" required>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
 <div class="modal" id="reviewModal">
   <div class="modal__content">
     <button class="modal__close" id="closeModal">×</button>

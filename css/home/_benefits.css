@@ -1,0 +1,33 @@
+.benefits {
+
+}
+
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px 15px;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.benefits__item {
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 27px;
+  border-radius: 24px;
+}
+
+.benefits__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 60px;
+}
+
+.benefits__name {
+  font-size: 22px;
+  max-width: 300px;
+}

@@ -1,6 +1,9 @@
 .banner {
+  display: flex;
+  flex-direction: column;
   background-image: url("../../images/gallery/1.webp");
   max-width: 850px;
+  width: 100%;
   margin: 60px auto 0;
   background-size: cover;
   background-position: center;
@@ -62,6 +65,7 @@
   opacity: 0;
   animation: fadeInUp 6s ease-in-out infinite;
   animation-delay: 1.7s;
+  color: #ffffff;
 }
 
 .banner__btn:hover {
