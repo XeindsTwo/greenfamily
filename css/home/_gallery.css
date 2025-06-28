@@ -40,3 +40,17 @@
   background-color: transparent;
   border-color: #ececec;
 }
+
+.gallery__subtitle {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.gallery__text {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.gallery__cta {
+  color: #ececec;
+}
