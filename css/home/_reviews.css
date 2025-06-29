@@ -166,3 +166,105 @@
   border-color: white;
   color: white;
 }
+
+@media (max-width: 1400px) {
+  .cases__image {
+    border: none;
+  }
+
+  .cases__image img {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .cases__name {
+    font-size: 24px;
+    max-width: 340px;
+  }
+
+  .cases__user {
+    margin-bottom: 0;
+  }
+
+  .cases__content {
+    max-width: 360px;
+  }
+
+  .cases__image {
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cases__inner {
+    flex-direction: column;
+  }
+
+  .cases__content {
+    padding: 25px 30px 0;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .cases__image {
+    margin-top: 0;
+    width: auto;
+    padding: 0 14px;
+  }
+
+  .cases__image img {
+    margin-left: 0;
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cases__image img {
+    height: 360px;
+  }
+
+  .cases__top {
+    max-width: 480px;
+    margin: 0 auto 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .swiper__reviews {
+    margin: 0 -6px;
+  }
+
+  .cases__content {
+    padding: 28px 24px 0;
+  }
+
+  .cases__image img {
+    height: 330px;
+  }
+
+  .cases__name {
+    font-size: 22px;
+    max-width: 300px;
+  }
+
+  .cases__text {
+    font-size: 17px;
+  }
+
+  .cases__user-name {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 510px) {
+  .cases__image img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 460px) {
+  .swiper__reviews {
+    margin: 0 -15px;
+  }
+}

@@ -1,5 +1,6 @@
 body {
   background-color: #00b23c;
+  overflow-x: hidden;
   font-family: "Inter", sans-serif;
 }
 
@@ -11,4 +12,11 @@ body {
 
 .indent {
   margin-bottom: 120px;
+
+  @media (max-width: 992px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 530px) {
+    margin-bottom: 85px;
+  }
 }

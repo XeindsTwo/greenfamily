@@ -2,11 +2,15 @@ Fancybox.bind("[data-fancybox]", {});
 
 new Swiper('.gallery__swiper', {
   loop: true,
-  slidesPerView: 2,
   spaceBetween: 15,
   navigation: {
     prevEl: '.gallery__btn--prev',
     nextEl: '.gallery__btn--next',
+  },
+  breakpoints: {
+    850: {
+      slidesPerView: 2,
+    }
   }
 });
 
@@ -92,3 +96,26 @@ const menuLinks = document.querySelectorAll('.desktop');
 menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('click', scrollToSection);
 });
+
+function animateBanner() {
+  const banner = document.querySelector('.banner');
+  const title = document.querySelector('.banner__title');
+  const text = document.querySelector('.banner__text');
+  const btn = document.querySelector('.banner__btn');
+
+  banner.classList.remove('animate');
+  title.classList.remove('animate');
+  text.classList.remove('animate');
+  btn.classList.remove('animate');
+
+  setTimeout(() => {
+    banner.classList.add('animate');
+    title.classList.add('animate');
+    text.classList.add('animate');
+    btn.classList.add('animate');
+  }, 50);
+}
+
+animateBanner();
+
+setInterval(animateBanner, 5000);

@@ -15,7 +15,6 @@
   color: #fff;
   padding: 40px 30px;
   border-radius: 14px;
-  animation: fadeInBanner 6s ease-in-out infinite;
 }
 
 .banner * {
@@ -39,7 +38,6 @@
   font-weight: 600;
   margin-bottom: 40px;
   opacity: 0;
-  animation: fadeInUp 6s ease-in-out infinite;
   animation-delay: 1s;
 }
 
@@ -49,7 +47,6 @@
   max-width: 320px;
   margin: 0 auto 30px;
   opacity: 0;
-  animation: fadeInUp 6s ease-in-out infinite;
   animation-delay: 1.4s;
 }
 
@@ -63,7 +60,6 @@
   border: 2px solid transparent;
   transition: background-color 0.4s, color 0.4s, border 0.4s;
   opacity: 0;
-  animation: fadeInUp 6s ease-in-out infinite;
   animation-delay: 1.7s;
   color: #ffffff;
 }
@@ -78,39 +74,87 @@
   color: white;
 }
 
-/* всплытие блока баннера */
 @keyframes fadeInBanner {
   0% {
     opacity: 0;
     transform: scale(0.96);
   }
-  10% {
+  100% {
     opacity: 1;
     transform: scale(1);
   }
-  100% {
-    opacity: 1;
-  }
 }
 
-/* анимация текста и кнопок */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(40px);
   }
-  10% {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
-  30% {
-    opacity: 1;
+}
+
+.banner__title,
+.banner__text,
+.banner__btn {
+  opacity: 0;
+}
+
+.banner.animate {
+  animation: fadeInBanner 1.4s ease forwards;
+}
+
+.banner__title.animate {
+  animation: fadeInUp 1.4s ease forwards;
+}
+
+.banner__text.animate {
+  animation: fadeInUp 1.4s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.banner__btn.animate {
+  animation: fadeInUp 1.4s ease forwards;
+  animation-delay: 0.7s;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    margin-top: 50px;
   }
-  40% {
-    opacity: 0;
-    transform: translateY(-20px);
+}
+
+@media (max-width: 768px) {
+  .banner__title {
+    font-size: 24px;
   }
-  100% {
-    opacity: 0;
+
+  .banner__text {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 290px;
+  }
+}
+
+@media (max-width: 610px) {
+  .banner__title {
+    font-size: 23px;
+  }
+
+  .banner__btn {
+    padding: 14px 29px;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    margin: 60px -7px 0;
+    width: auto;
+  }
+
+  .banner__title {
+    font-size: 22px;
   }
 }
